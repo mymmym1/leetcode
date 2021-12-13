@@ -20,14 +20,6 @@ public class TreeNode2 {
         }
     }
 
-    static void printInorder(Node n) {
-        if (n != null) {
-            printInorder(n.left);
-            System.out.print(n.val + ",");
-            printInorder(n.right);
-        }
-    }
-
     public static boolean isSameTree(Node p, Node q) {
         if (p == null && q == null)
             return true;
