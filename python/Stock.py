@@ -7,7 +7,7 @@ def maxProfit(prices):
     profits = []
     for a in range(len(prices)):
         for b in range(len(prices)):
-            if (b > a):
+            if b > a:
                 dif = prices[b] - prices[a]
                 profits.append(dif)
     if max(profits) > 0:
