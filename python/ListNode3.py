@@ -23,7 +23,7 @@ class LinkedList:
         return False
 
 #Make a cycle from an input list.
-    def get_node(self, pos):  #pos is the loop pointed position.
+    def get_node(self, pos):  #pos is the loop pointed position index.
         if pos != -1:
             p = 0
             tmp = self.head
