@@ -45,6 +45,6 @@ llB.head.next = Node(5)
 
 n = getIntersectionNode(llA, llB)
 if n == None:
-    print(0)
+    print("null")
 else:
     print("Intersected at ", n.val)
