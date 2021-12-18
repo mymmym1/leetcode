@@ -1,6 +1,6 @@
 # 160. Intersection of Two Linked Lists
 # Given the heads of two singly linked-lists headA and headB, return value of the node at which the two lists intersect.
-# listA and listB's length >= 1. intersectVal is 0 if listA and listB do not intersect.
+# listA and listB's length >= 1. If listA and listB do not intersect, return null.
 class Node:
     def __init__(self, val, next=None):
         self.val = val
