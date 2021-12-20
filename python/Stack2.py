@@ -25,9 +25,6 @@ class MyStack(object):
             return False
         else:
             return True
-        """
-        :rtype: bool
-        """
 
 obj = MyStack()
 obj.push(1)
