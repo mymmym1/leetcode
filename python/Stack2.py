@@ -21,10 +21,10 @@ class MyStack(object):
             return self.l[-1]
 
     def empty(self):
-        if len(self.l) > 0:
-            return False
-        else:
+        if len(self.l) = 0:
             return True
+        else:
+            return False
 
 obj = MyStack()
 obj.push(1)
