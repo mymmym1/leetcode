@@ -1,5 +1,7 @@
 def DecimalToBinary(m):
     temp = ""
+    if m == 0:
+        return "0"
     while m >= 1:
         digit = m % 2
         temp += str(digit)
