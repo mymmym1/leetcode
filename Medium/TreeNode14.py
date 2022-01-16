@@ -34,10 +34,21 @@ def printVerticalOrder(root):
         print()
 
 tree = TreeNode14()
+
+# tree.root = Node(3)
+# tree.root.left = Node(9)
+# tree.root.right = Node(20)
+# tree.root.right.left = Node(15)
+# tree.root.right.right = Node(7)
+
 tree.root = Node(3)
 tree.root.left = Node(9)
-tree.root.right = Node(20)
-tree.root.right.left = Node(15)
+tree.root.right = Node(8)
+tree.root.left.left = Node(4)
+tree.root.left.right = Node(0)
+tree.root.right.left = Node(1)
 tree.root.right.right = Node(7)
+tree.root.left.right.left = Node(5)
+tree.root.right.left.right = Node(2)
 
 printVerticalOrder(tree.root)
