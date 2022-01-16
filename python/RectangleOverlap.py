@@ -20,7 +20,6 @@ def isRectangleOverlap(rec1, rec2):
             return False
     return False
 
-# Instabase
 def overlappedRec(rec1, rec2):
     if isRectangleOverlap(rec1, rec2):
         if rec2[0] - rec1[0] >= 0:
