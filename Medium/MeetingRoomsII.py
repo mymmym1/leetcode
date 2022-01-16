@@ -1,5 +1,3 @@
-# Instabase: Similar to the ballroom question.
-
 def countRMs(intervals):
     count = 0
     if len(intervals) == 1:
