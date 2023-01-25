@@ -1,8 +1,12 @@
 def reverseString(s):
-    for i in range(len(s)//2):
-        temp = s[i]
-        s[i] = s[len(s) - 1 - i]
-        s[len(s) - 1 - i] = temp
+    first = 0
+    last = len(s) - 1
+    while first < last:
+        temp = s[first]
+        s[first] = s[last]
+        s[last] = temp
+        first += 1
+        last -= 1
     print(s)
 
 s = ["h","e","l","l","o"]
