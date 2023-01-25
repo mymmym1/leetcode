@@ -1,7 +1,7 @@
 package com.company;
 
 import java.util.*;
-
+// suppose the list nums[] is sorted from smaller number to larger number.
 class TwoSum{
     public static int[] twoSum(int[] nums, int target) {
         int[] indices = new int[2];
