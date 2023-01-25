@@ -1,10 +1,16 @@
 # 167. Two Sum II - Input Array Is Sorted
 # 2 <= numbers.length <= 3 * 10^4. Numbers is sorted in non-decreasing order.
 def twoSum(numbers, target):
-    for i in range(len(numbers)):
-        for j in range(len(numbers)):
-            if i < j and numbers[i] + numbers[j] == target:
-                l = [i+1, j+1]
+    left = 0
+    right = len(numbers) -1
+    l = []
+    while left < right:
+        if numbers[left] + numbers[right] == target:
+            l = [left + 1, right + 1]
+        if numbers[left] + numbers[right] > target:
+            right -= 1
+        else:
+            left += 1
     return l
 
 '''
